@@ -22,7 +22,7 @@ header {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     color:grey;
-
+    
     height:80px;	
     width:100%;
 	border-bottom:solid #cccccc 1px;
@@ -55,8 +55,6 @@ header li:hover{
 	float:left;            
     transition: background .1s ease-in-out , color .1s ease-in-out;
 }
-
-
 
 input {
     background: #fafafa;
@@ -96,10 +94,8 @@ input {
 }
 
 .subdiv li{
-    text-decoration: none;
-    list-style: none;
-    float:left;
-    margin: 0 auto;
+    display:table;
+    margin:0 auto;
     width:72%;
     border-left:none;  
     border-right:none;
@@ -152,7 +148,7 @@ header .ListRight {
     height:80px;    
 }
 
-header .faSymbol {
+.faSymbol {
 	font-family:FontAwesome;
 }
 
@@ -169,8 +165,6 @@ header .cWrapper {
 	width:100%;
     margin-top:40px;
     position:relative;
-    overflow: hidden;
-    
 }
 
 header #image {
@@ -194,8 +188,39 @@ header a {
     color:inherit;
 }
 
-header a:active {
-    
+
+.scrollNavBar {
+    background-color: #1a1a1a;
+    width: 100%;
+    position: fixed;
+}
+
+
+.scrollNavBar ul {
+    height: 60px;
+    width: 1170px;
+    margin: auto;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+.scrollNavBar a{
+    color: white;
+    text-decoration: none;
+    text-decoration-color: none;    
+}
+.scrollNavBar ul li {
+    list-style: none;
+	padding-right:10px;
+	border-right: solid #cccccc 1px;
+	padding-left:10px;
+    height: 60px;
+	float:left;            
+    transition: background .1s ease-in-out , color .1s ease-in-out;
+}
+
+.scrollNavBar .cWrapper {
+    margin-top:20px;
 }
 
 section h1{
@@ -308,24 +333,4 @@ footer{
     float: right;
 }
 
-#tableHidden tr td:nth-of-type(1), #tableHidden th:nth-of-type(1) {
-    width: 50%;
-}
-    
-#tableHidden tr td:nth-of-type(2), #tableHidden th:nth-of-type(2) {
-    width: 10%;
-}
 
-#tableHidden tr td:nth-of-type(3), #tableHidden th:nth-of-type(3) {
-    width: 10%;
-    visibility: collapse;
-    border-collapse: collapse;
-}
-
-#tableHidden tr td:nth-of-type(4), #tableHidden th:nth-of-type(4) {
-    width: 15%;
-}
-
-#tableHidden tr td:nth-of-type(5), #tableHidden th:nth-of-type(5) {
-    width: 15%;
-}
