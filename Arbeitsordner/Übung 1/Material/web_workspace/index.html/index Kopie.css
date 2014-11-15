@@ -1,0 +1,143 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#wrapper {
+    width: 1170px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+header {
+    <!--height:80px; 
+    width:100%;
+    padding:0px;-->
+    height: auto;
+    overflow: hidden;
+}
+
+nav {
+    background:linear-gradient(#d1d1d1, #ebebeb); 
+    border-top:solid grey;
+    height: 120px;
+    float: left;
+    
+}
+
+nav ul {
+    margin: 0;
+    padding: 0.8em;
+    text-align: center;
+  }
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin: 0; 
+    padding: 0;
+  }
+
+nav a, nav span{
+    border-right: solid grey 1px;
+    float: left;
+    width: 125.6px;
+    margin: 0.4em;
+    padding: 50px 10px 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#image{
+    border-right: none;
+    float: left;
+    width: 118px;
+    margin: 0.4em;
+    padding: 18px 10px 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+nav ul a:hover, nav ul span{
+    border-color: white;
+    border-left-color: black; border-top-color: black;
+    color: white; background-color: gray;
+}
+
+nav ul div{
+    clear:both;
+}
+
+section h1{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 3em;
+    line-height: 140%;
+    font-style: Normal 400;
+    padding: 20px 10px 20px 10px;
+}
+
+section{
+    height: 250px;
+}
+
+#leftNumb{
+    float: left;
+}
+
+#rightNumb{
+    float: right;
+}
+
+article{
+    height: auto;
+}
+
+article table{
+    width: 1170px
+}
+
+article thead tr{
+    border-bottom: solid grey 2px;
+}
+
+article th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+article td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+article i{
+    padding-left: 5px;
+    padding-right: 2px;
+} 
+
+article tr{
+    border-bottom: solid grey 1px;
+}
+
+article a:link{
+    color: green;
+}
+
+article a:hover{
+    color: blue;
+    text-decoration: none;
+}
+
+<!--article a:visited{
+    color: grey;
+}-->
+
+article table img{
+    padding-right: 10px;
+    height: 60px;
+    width: 60px;
+}
