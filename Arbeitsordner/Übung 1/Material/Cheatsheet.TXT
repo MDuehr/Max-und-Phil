@@ -1,0 +1,17 @@
+OVERVIEW : fa-th-large [&#xf009;]
+LISTE : fa-list [&#xf03a;]
+SETTINGS :  fa-gear (alias) [&#xf013;]
+
+REGISTER :  fa-star [&#xf005;]
+LOGIN : fa-sign-in [&#xf090;]
+USER : fa-user [&#xf007;]
+
+
+
+
+STIFT :  fa-pencil [&#xf040;]
+PFEIL : fa-mail-forward (alias) [&#xf064;]
+
+AUGE : fa-eye [&#xf06e;]
+SCHLOSS : fa-lock [&#xf023;]
+MUELLEIMER: fa-trash-o [&#xf014;]
