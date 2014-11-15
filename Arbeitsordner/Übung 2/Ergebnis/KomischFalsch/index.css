@@ -94,8 +94,10 @@ input {
 }
 
 .subdiv li{
-    display:table;
-    margin:0 auto;
+    text-decoration: none;
+    list-style: none;
+    float:left;
+    margin: 0 auto;
     width:72%;
     border-left:none;  
     border-right:none;
@@ -128,6 +130,10 @@ input {
     padding: 5px;
 }
 
+.subdiv .listEleContainer {
+    
+}
+
 .subdiv li:hover{
    background: inherit;
     color: inherit;
@@ -144,7 +150,7 @@ header .ListRight {
     height:80px;    
 }
 
-.faSymbol {
+header .faSymbol {
 	font-family:FontAwesome;
 }
 
@@ -190,51 +196,6 @@ header a:active {
     
 }
 
-.scrollNavBar {
-    position: fixed;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    color:grey;
-    
-    margin-top: -80px;
-    visibility: hidden;
-    height:80px;	
-    width:100%;
-    background: darkgrey;
-    animation: slide 2s forwards;
-}
-
-.scrollNavBarWrapper {
-    margin:auto;
-    width:1170px;
-    height:80px;
-}
-
-.scrollNavBar ul{
-        position: relative;
-	padding-right:10px;
-	border-right: solid #cccccc 1px;
-	padding-left:10px;
-	height:80px;
-	float:left;            
-    transition: background .1s ease-in-out , color .1s ease-in-out;
-    
-}
-
-.scrollNavBar ul li{
-    position: relative;
-	padding-right:10px;
-	border-right: solid #cccccc 1px;
-	padding-left:10px;
-	height:80px;
-	float:left;            
-    transition: background .1s ease-in-out , color .1s ease-in-out;
-}
-
-.scrollNavBar a {
-    text-decoration: none;
-    color:inherit;
-}
 section h1{
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 3em;
