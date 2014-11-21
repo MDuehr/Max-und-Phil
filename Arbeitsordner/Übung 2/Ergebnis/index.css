@@ -105,7 +105,7 @@ input {
     padding-top:10px;
 }
 
-.subdiv input[type="submit"] {
+.subdiv input[type="submit"], .subdiv input[type="button"] {
     float: right;
     display: inline;
     background: linear-gradient(#61cd1f , #2e9b00);
@@ -355,8 +355,6 @@ footer{
 
 #tableHidden tr td:nth-of-type(3), #tableHidden th:nth-of-type(3) {
     width: 10%;
-    visibility: collapse;
-    border-collapse: collapse;
 }
 
 #tableHidden tr td:nth-of-type(4), #tableHidden th:nth-of-type(4) {
@@ -365,4 +363,18 @@ footer{
 
 #tableHidden tr td:nth-of-type(5), #tableHidden th:nth-of-type(5) {
     width: 15%;
+}
+
+.red{
+    color: red;
+}
+
+#useralert{
+    color: red;
+    display: none;
+}
+
+#registeralert{
+    color:red;
+    display: none;
 }
