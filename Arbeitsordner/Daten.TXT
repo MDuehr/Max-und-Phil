@@ -1,7 +1,0 @@
-http://imld.de/studium/lehre/ws_14-15/wme_14-15/wme-ueb_14-15/
-
-mtstudent
-Passwort: WME_14-15!
-
-TeamNr: 10
-Codewort: Eclipse
