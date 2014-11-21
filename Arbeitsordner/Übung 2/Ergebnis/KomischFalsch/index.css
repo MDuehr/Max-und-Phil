@@ -22,7 +22,7 @@ header {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     color:grey;
-    
+
     height:80px;	
     width:100%;
 	border-bottom:solid #cccccc 1px;
@@ -55,6 +55,8 @@ header li:hover{
 	float:left;            
     transition: background .1s ease-in-out , color .1s ease-in-out;
 }
+
+
 
 input {
     background: #fafafa;
@@ -94,8 +96,10 @@ input {
 }
 
 .subdiv li{
-    display:table;
-    margin:0 auto;
+    text-decoration: none;
+    list-style: none;
+    float:left;
+    margin: 0 auto;
     width:72%;
     border-left:none;  
     border-right:none;
@@ -105,7 +109,7 @@ input {
     padding-top:10px;
 }
 
-.subdiv input[type="submit"], .subdiv input[type="button"] {
+.subdiv input[type="submit"] {
     float: right;
     display: inline;
     background: linear-gradient(#61cd1f , #2e9b00);
@@ -148,7 +152,7 @@ header .ListRight {
     height:80px;    
 }
 
-.faSymbol {
+header .faSymbol {
 	font-family:FontAwesome;
 }
 
@@ -165,6 +169,8 @@ header .cWrapper {
 	width:100%;
     margin-top:40px;
     position:relative;
+    overflow: hidden;
+    
 }
 
 header #image {
@@ -188,39 +194,8 @@ header a {
     color:inherit;
 }
 
-
-.scrollNavBar {
-    background-color: #1a1a1a;
-    width: 100%;
-    position: fixed;
-}
-
-
-.scrollNavBar ul {
-    height: 60px;
-    width: 1170px;
-    margin: auto;
-    text-decoration: none;
-    text-decoration-color: white;
-}
-
-.scrollNavBar a{
-    color: white;
-    text-decoration: none;
-    text-decoration-color: none;    
-}
-.scrollNavBar ul li {
-    list-style: none;
-	padding-right:10px;
-	border-right: solid #cccccc 1px;
-	padding-left:10px;
-    height: 60px;
-	float:left;            
-    transition: background .1s ease-in-out , color .1s ease-in-out;
-}
-
-.scrollNavBar .cWrapper {
-    margin-top:20px;
+header a:active {
+    
 }
 
 section h1{
@@ -343,6 +318,8 @@ footer{
 
 #tableHidden tr td:nth-of-type(3), #tableHidden th:nth-of-type(3) {
     width: 10%;
+    visibility: collapse;
+    border-collapse: collapse;
 }
 
 #tableHidden tr td:nth-of-type(4), #tableHidden th:nth-of-type(4) {
@@ -351,18 +328,4 @@ footer{
 
 #tableHidden tr td:nth-of-type(5), #tableHidden th:nth-of-type(5) {
     width: 15%;
-}
-
-.red{
-    color: red;
-}
-
-#useralert{
-    color: red;
-    display: none;
-}
-
-#registeralert{
-    color:red;
-    display: none;
 }
