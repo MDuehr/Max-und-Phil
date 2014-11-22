@@ -1,14 +1,16 @@
 /*global $, jQuery, alert*/
-var test = $("#scrollNavBarUl");
-var test2 = $("#scrollNavBarId");
+var navBackground = $("#scrollNavBarUl");
+var navList = $("#scrollNavBarId");
 var offset;
 function scrollFunction() {
     "use strict";
-    if (window.pageYOffset > 20) {
-        test2.slideDown("slow");
-        test2.children().slideDown("slow");
+    if (window.pageYOffset > 80) {
+        navList.slideDown("fast");
+        navBackground.slideDown("slow");
     } else {
-        test2.css("display", "none");
+        navList.css("display","none");
+        navBackground.css("display", "none");
+        
     }
     test2.css("background , #000000");
 }
