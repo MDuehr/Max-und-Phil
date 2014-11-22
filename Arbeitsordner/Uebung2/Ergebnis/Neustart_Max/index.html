@@ -56,22 +56,32 @@
                                 <a href="menu3"><div class="cWrapper"><span class="faSymbol">&#xf005; </span>Register</div></a>
                                 <div class="subdiv" id="regList">
                                     <ul>
-                                        <li><form>First name<br /><input type="text" name="firstname"></form></li>
-                                        <li><form>Last name<br /><input type="text" name="lastname"></form></li>
-                                        <li id="dottetborder"><form>Birthday<br /><input type="date" name="birthday"></form></li>
-                                        <li><form>Your username<br /><input type="text" name="yourusername"></form></li>
-                                        <li><form>Your password<br /><input type="password" name="yourpassword"></form></li>
-                                        <li><form><input type="submit" value="Register" /></form></li>
+                                        <form name="registerVal" action="#" onSubmit="return validateRegister()">
+                                        <li id="registeralert">You have to fill out all the textfields</li>
+                                        <li id="alert3">Please enter a valid date of birth</li>
+                                        <li>First name<br /><input type="text" name="firstname"></li>
+                                        <li>Last name<br /><input type="text" name="lastname"></li>
+                                        <li id="dottetborder">Birthday<br /><input type="date" name="birthday"></li>
+                                        <li>Your username<br /><input type="text" name="yourusername"></li>
+                                        <li>Your password<br /><input type="password" name="yourpassword"></li>
+                                        <li><input type="submit" name="Abschicken" value="Register" /></li>
+                                        </form>
                                     </ul>
                                 </div>
                             </li>
                             <li class="headelement">
                                 <a href="menu4"><div class="cWrapper"><span class="faSymbol">&#xf090; </span>Login</div></a>
                                 <div class="subdiv" id="loginList">
-                                    <ul >
-                                        <li><form>Username<br /><input type="text" name="loginusername"></form></li>
-                                        <li><form>Passwort<br /><input type="text" name="loginpassword"></form>
-                                        <li><div class= "listEleContainer"><div class="listEleLeft"><form><input type="checkbox" />Remember me</form></div><form><input type="submit" value="Login"></form></div></li>
+                                    <ul>
+                                        <form name="loginVal" action="#" onSubmit="return validateLogin()">
+                                        <li id="useralert">The given username or password is wrong! Please try again.</li>
+                                        <li>Username<br /><input type="text" name="username"></li>
+                                        <li>Passwort<br /><input type="text" name="password">
+                                        <li><div class= "listEleContainer">
+                                            <div class="listEleLeft"><input type="checkbox" />Remember me</div>
+                                            <input type="submit" name="Abschicken" value="Login">
+                                        </div></li>
+                                        </form>
                                     </ul>
                                 </div>
                             </li>
