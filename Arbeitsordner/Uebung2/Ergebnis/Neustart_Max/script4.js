@@ -1,4 +1,4 @@
-function validateLogin() {
+/*function validateLogin() {
     
     var a = document.forms["input"]["loginusername"].value;
     var b = document.forms["input"]["loginpassword"].value;
@@ -28,4 +28,70 @@ function validateRegister() {
     if(c == null || c != "") {
         f.style.display = "inherit";
     }
+}
+
+
+
+
+global alert
+function validateLogin() {
+    "use strict";
+    alert("bitch");
+}
+*/
+
+function validateLogin()
+{
+var a = document.loginVal.username.value;
+var b = document.loginVal.password.value;
+var c = document.getElementById("alert1");
+
+if(a != "admin" || b != "123")
+{
+c.style.display="block";
+}
+else{
+    c.style.display="none";
+}
+return false;
+}
+
+function validateRegister()
+{
+var a = document.registerVal.firstname.value;
+var b = document.registerVal.lastname.value;
+var c = document.registerVal.birthday.value;
+var d = document.registerVal.username.value;
+var e = document.registerVal.password.value;
+var f = document.getElementById("alert2");
+var g = document.getElementById("alert3");
+
+if(a == "" || b == "" || d == "" || e == "")
+{
+f.style.display="block";
+
+
+}
+else{
+    f.style.display="none";
+}
+
+
+  var pdate = c.split('-');
+
+  var yy = parseInt(pdate[0]);
+  var mm = parseInt(pdate[1]);
+  var dd = parseInt(pdate[2]);
+
+var Anrede;
+Anrede = document.registerVal.firstname.value;
+if((yy==1995 && mm>11 && dd>11) || yy>1995)
+{
+  g.style.display = "block";
+}
+else{
+  f.style.display="none";
+}
+
+return false;
 }
