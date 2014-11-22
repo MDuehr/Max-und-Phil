@@ -1,11 +1,17 @@
+/*global $, jQuery, alert*/
+var test = $("#scrollNavBarId ul");
+var test2 = $("#scrollNavBarId");
+var offset;
 function scrollFunction() {
     "use strict";
-    var offset = window.pageYOffset;
-    if (offset > 81) {
-        document.getElementById("scrollNavBar2").style.visibility = "visible";
+    if (window.pageYOffset > 20) {
+        test2.slideDown("slow");
+        test.slideDown("slow");
     } else {
-        document.getElementById("scrollNavBar2").style.visibility = "hidden";
+        test2.css("display", "none");
     }
+    test2.css("background , #000000");
 }
+
 
 window.onscroll = scrollFunction;

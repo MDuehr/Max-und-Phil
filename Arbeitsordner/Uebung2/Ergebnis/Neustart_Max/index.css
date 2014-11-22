@@ -190,16 +190,27 @@ header a {
 
 
 .scrollNavBar {
+    z-index: 10;
     background-color: #1a1a1a;
-    width: 100%;
+    display:none;
     position: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    height:60px;	
+    width:100%;
+	border-bottom:solid #cccccc 1px;
 }
 
 
 .scrollNavBar ul {
-    height: 60px;
+    position: fixed;
+    height: auto;
     width: 1170px;
-    margin: auto;
+    left:0;
+    right:0;
+    display: inherit;
+    margin-right: auto;
+    margin-left: auto;
     text-decoration: none;
     text-decoration-color: white;
 }
