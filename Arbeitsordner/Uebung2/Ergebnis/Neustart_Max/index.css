@@ -374,6 +374,11 @@ footer{
 }
 
 #registeralert{
-    color:red;
+    color: red;
+    display: none;
+}
+
+#birthalert{
+    color: red;
     display: none;
 }

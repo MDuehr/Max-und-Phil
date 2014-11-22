@@ -64,7 +64,7 @@ var c = document.registerVal.birthday.value;
 var d = document.registerVal.yourusername.value;
 var e = document.registerVal.yourpassword.value;
 var f = document.getElementById("registeralert");
-var g = document.getElementById("alert3");
+var g = document.getElementById("birthalert");
 
 if(a == "" || b == "" || d == "" || e == "")
 {
