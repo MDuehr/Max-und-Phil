@@ -326,6 +326,10 @@ article table img{
     color:white;
 }
 
+#details2 {
+    background-color: #444;
+}
+
 #dottetborder {
     border-bottom: 1px dotted lightgrey;   
 }
