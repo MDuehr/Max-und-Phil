@@ -1,19 +1,41 @@
-function quicksort(arr)
-{
-//if array is empty
-if (arr.length === 0) {
-return [];
-}
-  var left = [];
-  var right = [];
-  var pivot = arr[0];
-  //go through each element in array
-  for (var i = 1; i < arr.length; i++) {
-      if (arr[i] < pivot) {
-         left.push(arr[i]);
-      } else {
-         right.push(arr[i]);
-      }
-  }
-  return quicksort(left).concat(pivot, quicksort(right));
-}
+function sortSizes(){
+            json.sort(function(a,b) { return parseFloat(b.size) - parseFloat(a.size) } );
+
+                while (document.getElementById("parseData").rows.length > 0) {
+                    document.getElementById("parseData").deleteRow(0);
+            }
+
+            for (var i = 0; i < json.length; i++) {
+            tr = $('<tr/>');
+            tr.append("<td>" + json[i].filename + "</td>");
+            tr.append("<td>" + json[i].size + "</td>");
+            tr.append("<td>" + json[i].type + "</td>");
+            tr.append("<td>" + json[i].creation + "</td>");
+            tr.append("<td>" + json[i].action + "</td>");
+            $('#parseData').append(tr);
+        }
+    }
+
+        function sortNames(){
+            //json.sort(function(a,b) { return parseFloat(b.size) - parseFloat(a.size) } );
+
+            json.sort(function(a, b){
+                if(a.filename < b.filename) return -1;
+                if(a.filename > b.filename) return 1;
+                return 0;
+            });
+
+                while (document.getElementById("parseData").rows.length > 0) {
+                    document.getElementById("parseData").deleteRow(0);
+            } 
+
+            for (var i = 0; i < json.length; i++) {
+            tr = $('<tr/>');
+            tr.append("<td>" + json[i].filename + "</td>");
+            tr.append("<td>" + json[i].size + "</td>");
+            tr.append("<td>" + json[i].type + "</td>");
+            tr.append("<td>" + json[i].creation + "</td>");
+            tr.append("<td class='symboltd'>" + json[i].action + "</td>");
+            $('#parseData').append(tr);
+        }
+    }

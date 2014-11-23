@@ -1,95 +1,53 @@
-/*function validateLogin() {
-    
-    var a = document.forms["input"]["loginusername"].value;
-    var b = document.forms["input"]["loginpassword"].value;
-    var c = document.getElementById("useralert");
-    
-    if (a != "admin" || b != "12345") {
-        c.style.display = "inherit";
-    }
-    else {
-        c.style.display = "none";
-    }
-}
-
-//AJAX hier vielleicht damit buttons nicht ganze seite refreshen?!
-
-function validateRegister() {
-    var a = document.forms["register"]["firstname"].value;
-    var b = document.forms["register"]["lastname"].value;
-    var c = document.forms["register"]["birthday"].value;
-    var d = document.forms["register"]["yourusername"].value;
-    var e = document.forms["register"]["yourpassword"].value;
-    var f = document.getElementById("registeralert");
-    
-    if(a == null || b == null || d == null || e == null) {
-        f.style.display = "inherit";
-    }
-    if(c == null || c != "") {
-        f.style.display = "inherit";
-    }
-}
-
-
-
-
-global alert
-function validateLogin() {
-    "use strict";
-    alert("bitch");
-}
-*/
-
 function validateLogin()
 {
-var a = document.loginVal.username.value;
-var b = document.loginVal.password.value;
-var c = document.getElementById("useralert");
+    var a = document.loginVal.username.value;
+    var b = document.loginVal.password.value;
+    var c = document.getElementById("useralert");
 
-if(a != "admin" || b != "123")
-{
-c.style.display="block";
-}
-else{
-    c.style.display="none";
-}
-return false;
+    if(a != "admin" || b != "123")
+    {
+    c.style.display="block";
+    }
+    else{
+        c.style.display="none";
+    }
+    return false;
 }
 
 function validateRegister()
 {
-var a = document.registerVal.firstname.value;
-var b = document.registerVal.lastname.value;
-var c = document.registerVal.birthday.value;
-var d = document.registerVal.yourusername.value;
-var e = document.registerVal.yourpassword.value;
-var f = document.getElementById("registeralert");
-var g = document.getElementById("birthalert");
+    var a = document.registerVal.firstname.value;
+    var b = document.registerVal.lastname.value;
+    var c = document.registerVal.birthday.value;
+    var d = document.registerVal.yourusername.value;
+    var e = document.registerVal.yourpassword.value;
+    var f = document.getElementById("registeralert");
+    var g = document.getElementById("birthalert");
 
-if(a == "" || b == "" || d == "" || e == "")
-{
-f.style.display="block";
-
-
-}
-else{
-    f.style.display="none";
-}
+    if(a == "" || b == "" || d == "" || e == "")
+    {
+    f.style.display="block";
 
 
-  var pdate = c.split('-');
+    }
+    else{
+        f.style.display="none";
+    }
 
-  var yy = parseInt(pdate[0]);
-  var mm = parseInt(pdate[1]);
-  var dd = parseInt(pdate[2]);
 
-if((yy==1995 && mm>11 && dd>11) || yy>1995)
-{
-  g.style.display = "block";
-}
-else{
-  g.style.display="none";
-}
+      var pdate = c.split('-');
 
-return false;
+      var yy = parseInt(pdate[0]);
+      var mm = parseInt(pdate[1]);
+      var dd = parseInt(pdate[2]);
+
+    if((yy==1995 && mm>11 && dd>11) || yy>1995)
+    {
+      g.style.display = "block";
+    }
+    else{
+      g.style.display="none";
+    }
+
+    return false;
 }
