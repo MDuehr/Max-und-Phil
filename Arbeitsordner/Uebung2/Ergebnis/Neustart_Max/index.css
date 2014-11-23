@@ -222,7 +222,7 @@ header a {
 .scrollNavBar ul li {
     list-style: none;
 	padding-right:10px;
-	border-right: solid #cccccc 1px;
+	border-left:none;
     border-bottom: none;
 	padding-left:10px;
     height: 60px;
