@@ -1,0 +1,40 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<!-- Files -->
+	<xsd:element name="files">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+				<xsd:element name="file" type="fileType" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:complexType name="fileType">
+		<xsd:sequence>
+			<xsd:element name="id" type="xsd:integer" />
+			<xsd:element name="filename" type="xsd:string" />
+			<xsd:element name="filepath" type="xsd:string" />
+			<xsd:element name="creation_date" type="timeAndDateType" />
+            <xsd:element name="filetype" type="fileTypeEnumType" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+    
+    <!-- Custom types -->
+	<xsd:simpleType name="timeAndDateType">
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="12" />
+			<xsd:maxLength value="16" />
+			<xsd:pattern value="([0-3][0-9]\.[0-1][0-9]\.[0-9]{4})\-[0-2][0-9]:[0-5][0-9]" />
+		</xsd:restriction>
+	</xsd:simpleType>
+        
+    <xsd:simpleType name="fileTypeEnumType">
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="jpeg" />
+        <xsd:enumeration value="txt" />
+        <xsd:enumeration value="mp3" />
+      </xsd:restriction>
+    </xsd:simpleType>
+	
+</xsd:schema>
