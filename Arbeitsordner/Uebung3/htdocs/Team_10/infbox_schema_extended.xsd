@@ -17,7 +17,7 @@
                         <xs:element name="metadata">
                             <xs:complexType>
                                  <xs:sequence>
-                                    <xs:element name="size" type="xs:long"/>
+                                    <xs:element name="size" type="xs:long" nillable="true"/>
                                     <xs:element name="creation_date" type="xs:timeanddate"/>
                                     <xs:element name="mimetype" type="xs:categoryandtype"/>
                                     <xs:element name="thumbnail_available" type="xs:boolean"/>
