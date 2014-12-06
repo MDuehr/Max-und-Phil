@@ -3,34 +3,6 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<!--<xs:choice minOccurs="0">-->
-
-<!-- files.xml -->
-<xs:element name="files">
-    <xs:complexType>
-        <xs:sequence minOccurs="0" maxOccurs="unbounded">
-           
-            <xs:element name="file">
-                 <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="id" type="xs:integer"/>
-                        <xs:element name="filename" type="nameoffile"/>
-                        <xs:element name="filepath" type="xs:string"/>
-                        <xs:element name="creation_date" type="timeanddate"/>
-                        <xs:element name="filetype" type="typeoffile"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-
-        </xssequence>
-    </xs:complexType>
-</xs:element>
-
-<!--</xs:choice>-->
-
-
-<!--<xs:choice minOccurs="0">-->
-
 <!-- items.xml -->
 <xs:element name="items">
     <xs:complexType>
@@ -60,8 +32,6 @@
     </xs:complexType>
 </xs:element>
 
-<!--</xs:choice>-->
-
 <!-- define special types -->
 <xs:simpleType name="nameoffile">
     <xs:restriction base="xs:string">
@@ -84,14 +54,6 @@
             <xs:enumeration value="audio/mpeg3"/>
             <xs:enumeration value="txt/plain"/>
         </restriction>
-    </xs:simpleType>
-
-    <xs:simpleTye name="typeoffile">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="jpeg"/>
-            <xs:enumeration value="txt"/>
-            <xs:enumeration value="mp3"/>
-        </xs:restriction>
     </xs:simpleType>
 
 
