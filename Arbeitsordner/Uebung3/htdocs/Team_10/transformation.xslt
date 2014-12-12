@@ -1,7 +1,9 @@
 <?xml version="1.0" ?>
 
-<xsl:stylesheet version="1.0">
-	<xsl:tempate match="/">
+<xsl:stylesheet version="1.0"
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<
 		<items>
 
 			<xsl:for-each select="files/file">
@@ -15,7 +17,7 @@
 				<metadata>
 					<size></size>
 					<creation_date><xsl:value-of select="creation_date"/></creation_date>
-					<mimetype><!--<xsl:value-of select="filetype"/>-->
+					<mimetype><xsl:value-of select="filetype"/>
 						<xsl:choose>
 							<xsl:when test="filetype = 'jpeg'">image/jpeg</xsl:when>
 							<xsl:when test="filetype = 'txt'">txt/plain</xsl:when>
@@ -36,6 +38,7 @@
 			</xsl:for-each>
 
 		</items>
+
 	</xsl:template>
 <xsl:stylesheet>
 
