@@ -1,0 +1,92 @@
+<!--xml_schema.xsd-->
+
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- items.xml -->
+<xs:element name="items">
+    <xs:complexType>
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+           
+            <xs:element name="item">
+                 <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="id" type="xs:integer"/>
+                        <xs:element name="filename" type="nameoffile"/>
+                        <xs:element name="file_url" type="xs:string"/>
+                        <xs:element name="metadata">
+                            <xs:complexType>
+                                 <xs:sequence>
+                                    <xs:element name="size" type="xs:long" nillable="true"/>
+                                    <xs:element name="creation_date" type="timeanddate"/>
+                                    <xs:element name="mimetype" type="categoryandtype"/>
+                                    <xs:element name="thumbnail_available" type="xs:boolean"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+
+<!-- files.xml -->
+<xs:element name="files">
+    <xs:complexType>
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+           
+            <xs:element name="file">
+                 <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="id" type="xs:integer"/>
+                        <xs:element name="filename" type="nameoffile"/>
+                        <xs:element name="filepath" type="xs:string"/>
+                        <xs:element name="creation_date" type="timeanddate"/>
+                        <xs:element name="filetype" type="typeoffile"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+
+
+<!-- define special types -->
+<xs:simpleType name="nameoffile">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="([A-Za-z0-9_\-])*\.([A-Za-z0-9])+"/>
+    </xs:restriction>
+</xs:simpleType>
+
+    <xs:simpleType name="timeanddate">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="12"/>
+            <xs:maxLength value="16"/>
+            <xs:pattern value="([0-3][0-9]\.(([0][1-9])|([1][0-2]))\.[1-2]([0-9]){3})\-((([0-1][0-9])|([2][0-3])):[0-5][0-9])"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="categoryandtype">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="image/jpeg"/>
+            <xs:enumeration value="video/mp4"/>
+            <xs:enumeration value="audio/mpeg3"/>
+            <xs:enumeration value="txt/plain"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="typeoffile">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="jpeg"/>
+            <xs:enumeration value="txt"/>
+            <xs:enumeration value="mp3"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+</xs:schema>
