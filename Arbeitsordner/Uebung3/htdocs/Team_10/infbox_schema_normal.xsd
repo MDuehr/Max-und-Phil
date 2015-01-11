@@ -20,14 +20,14 @@
                 </xs:complexType>
             </xs:element>
 
-        </xssequence>
+        </xs:sequence>
     </xs:complexType>
 </xs:element>
 
 <!-- define special types -->
 <xs:simpleType name="nameoffile">
     <xs:restriction base="xs:string">
-        <xs:pattern value="([A-Za-z0-9])*\.([A-Za-z0-9])+"/>
+        <xs:pattern value="([A-Za-z0-9_\-])*\.([A-Za-z0-9])+"/>
     </xs:restriction>
 </xs:simpleType>
 
@@ -39,7 +39,7 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleTye name="typeoffile">
+    <xs:simpleType name="typeoffile">
         <xs:restriction base="xs:string">
             <xs:enumeration value="jpeg"/>
             <xs:enumeration value="txt"/>

@@ -12,14 +12,14 @@
                  <xs:complexType>
                     <xs:sequence>
                         <xs:element name="id" type="xs:integer"/>
-                        <xs:element name="filename" type="xs:nameoffile"/>
+                        <xs:element name="filename" type="nameoffile"/>
                         <xs:element name="file_url" type="xs:string"/>
                         <xs:element name="metadata">
                             <xs:complexType>
                                  <xs:sequence>
                                     <xs:element name="size" type="xs:long" nillable="true"/>
-                                    <xs:element name="creation_date" type="xs:timeanddate"/>
-                                    <xs:element name="mimetype" type="xs:categoryandtype"/>
+                                    <xs:element name="creation_date" type="timeanddate"/>
+                                    <xs:element name="mimetype" type="categoryandtype"/>
                                     <xs:element name="thumbnail_available" type="xs:boolean"/>
                                 </xs:sequence>
                             </xs:complexType>
@@ -28,14 +28,38 @@
                 </xs:complexType>
             </xs:element>
 
-        </xssequence>
+        </xs:sequence>
     </xs:complexType>
 </xs:element>
+
+
+<!-- files.xml -->
+<xs:element name="files">
+    <xs:complexType>
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+           
+            <xs:element name="file">
+                 <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="id" type="xs:integer"/>
+                        <xs:element name="filename" type="nameoffile"/>
+                        <xs:element name="filepath" type="xs:string"/>
+                        <xs:element name="creation_date" type="timeanddate"/>
+                        <xs:element name="filetype" type="typeoffile"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+
 
 <!-- define special types -->
 <xs:simpleType name="nameoffile">
     <xs:restriction base="xs:string">
-        <xs:pattern value="([A-Za-z0-9])*\.([A-Za-z0-9])+"/>
+        <xs:pattern value="([A-Za-z0-9_\-])*\.([A-Za-z0-9])+"/>
     </xs:restriction>
 </xs:simpleType>
 
@@ -47,13 +71,21 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleTye name="categoryandtype">
+    <xs:simpleType name="categoryandtype">
         <xs:restriction base="xs:string">
             <xs:enumeration value="image/jpeg"/>
             <xs:enumeration value="video/mp4"/>
             <xs:enumeration value="audio/mpeg3"/>
             <xs:enumeration value="txt/plain"/>
-        </restriction>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="typeoffile">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="jpeg"/>
+            <xs:enumeration value="txt"/>
+            <xs:enumeration value="mp3"/>
+        </xs:restriction>
     </xs:simpleType>
 
 
