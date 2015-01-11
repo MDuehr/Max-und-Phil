@@ -7,6 +7,11 @@
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
+    
+    <uses-permission
+            android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission
+        android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -14,8 +19,9 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.Infbox_ab" >
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login" >
+            android:name="de.mt.wme.infbox_android_g10.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,20 +29,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".InfoActivity"
-            android:label="@string/title_activity_info" >
+            android:name="de.mt.wme.infbox_android_g10.InfoActivity"
+            android:label="@string/title_activity_info"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".RegisterActivity"
-            android:label="@string/title_activity_register" >
+            android:name="de.mt.wme.infbox_android_g10.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".ItemActivity"
-            android:label="@string/title_activity_item" >
+            android:name="de.mt.wme.infbox_android_g10.ItemActivity"
+            android:label="@string/title_activity_item"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".DetailActivity"
-            android:label="@string/title_activity_detail" >
+            android:name="de.mt.wme.infbox_android_g10.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 
