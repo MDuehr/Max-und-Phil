@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">infbox_android_gXX</string>
+    <string name="app_name">infbox_android_g10</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -10,5 +10,7 @@
     <string name="title_activity_register">RegisterActivity</string>
     <string name="title_activity_item">ItemActivity</string>
     <string name="title_activity_detail">DetailActivity</string>
+    <string name="login">Login</string>
+    <string name="register">Registrieren</string>
 
 </resources>
