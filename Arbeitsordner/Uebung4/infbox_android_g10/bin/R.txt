@@ -110,8 +110,10 @@ int drawable textfield_default_holo_light 0x7f020065
 int drawable textfield_disabled_focused_holo_light 0x7f020066
 int drawable textfield_disabled_holo_light 0x7f020067
 int drawable textfield_focused_holo_light 0x7f020068
-int id action_about 0x7f090001
-int id action_settings 0x7f090000
+int id action_about 0x7f090003
+int id action_settings 0x7f090002
+int id button_login 0x7f090000
+int id button_register 0x7f090001
 int layout activity_detail 0x7f030000
 int layout activity_info 0x7f030001
 int layout activity_item 0x7f030002
@@ -126,6 +128,8 @@ int string action_about 0x7f040004
 int string action_settings 0x7f040003
 int string app_name 0x7f040000
 int string hello_world 0x7f040002
+int string login 0x7f040009
+int string register 0x7f04000a
 int string title_activity_detail 0x7f040008
 int string title_activity_info 0x7f040005
 int string title_activity_item 0x7f040007
