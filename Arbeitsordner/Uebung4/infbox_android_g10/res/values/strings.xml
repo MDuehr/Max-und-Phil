@@ -12,5 +12,16 @@
     <string name="title_activity_detail">DetailActivity</string>
     <string name="login">Login</string>
     <string name="register">Registrieren</string>
+    <string name="student1">Student Maximilian Dühr, s9262497</string>
+    <string name="student2">Student Philipp Waack, s3354713</string>
+    <string name="infotext1">inf_box Android App</string>
+    <string name="infotext2">Übung WME 2014|2015</string>
+    <string name="email">Email</string>
+    <string name="password">Passwort</string>
+    <string name="namehint">Vorname, Nachname</string>
+    <string name="wrongemail">Bitte eine valide Email-Adresse angeben!</string>
+    <string name="emptyemail">Emailfeld darf nicht leer sein!</string>
+    <string name="wrongpassword">Das Passwort ist nicht korrekt</string>
+    <string name="emptypassword">Bitte Passwort eingeben</string>
 
 </resources>

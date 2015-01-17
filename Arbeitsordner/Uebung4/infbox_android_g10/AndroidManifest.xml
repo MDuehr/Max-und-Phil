@@ -39,7 +39,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="de.mt.wme.infbox_android_g10.ItemActivity"
+            android:name="de.mt.wme.infbox_android_g10.ItemListActivity"
             android:label="@string/title_activity_item"
             android:screenOrientation="portrait" >
         </activity>

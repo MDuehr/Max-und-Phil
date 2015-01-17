@@ -2,10 +2,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_gray"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="de.mt.wme.infbox_android_g10.InfoActivity" >
+
+    <ImageView
+        android:id="@+id/imageview_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/infbox_logo_full" />
+    
+	<TextView
+	    android:id="@+id/textview_info1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/imageview_logo"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp"
+	    android:text="@string/infotext1"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textColor="@color/inf_green" />
+    
+    <TextView
+        android:id="@+id/textview_student1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_info2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/student1"
+        android:textColor="@color/dark_gray"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textview_student2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_student1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/student2"
+        android:textColor="@color/dark_gray"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textview_info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_info1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/infotext2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/inf_green" />
 
 </RelativeLayout>
